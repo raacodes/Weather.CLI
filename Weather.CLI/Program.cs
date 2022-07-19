@@ -10,7 +10,7 @@ namespace Weather.CLI
         {
             const string apiKey = "your api_key here";
 
-            Console.WriteLine("Digita uma cidade: \n");
+            Console.WriteLine("Digita uma cidade ou país: \n");
             string name = Console.ReadLine();
             Console.WriteLine("");
 
