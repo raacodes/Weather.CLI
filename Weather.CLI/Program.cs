@@ -29,7 +29,7 @@ namespace Weather.CLI
             WeatherResponse weatherResponse = JsonConvert.DeserializeObject<WeatherResponse>(response);
 
             var data = DateTime.Now;
-            var formatada = String.Format("{0:dd/mm/yyyy hh:MM:ss}", data);
+            var formatada = String.Format("{0:dd/MM/yyyy hh:mm:ss}", data);
             Console.WriteLine($"Tempo atual em {weatherResponse.Name} - {formatada}");
             Console.WriteLine($"País: {weatherResponse.Sys.Country}");
             Console.WriteLine($"Temperatura atual: {weatherResponse.Main.Temp} Celsius");
